@@ -87,6 +87,7 @@ namespace Contact_Tracing
             this.LastNameLabel.Size = new System.Drawing.Size(84, 18);
             this.LastNameLabel.TabIndex = 3;
             this.LastNameLabel.Text = "Last Name";
+            this.LastNameLabel.Click += new System.EventHandler(this.LastNameLabel_Click);
             // 
             // lastNameTxtBox
             // 
@@ -97,6 +98,7 @@ namespace Contact_Tracing
             this.lastNameTxtBox.Name = "lastNameTxtBox";
             this.lastNameTxtBox.Size = new System.Drawing.Size(135, 29);
             this.lastNameTxtBox.TabIndex = 4;
+            this.lastNameTxtBox.TextChanged += new System.EventHandler(this.lastNameTxtBox_TextChanged);
             // 
             // middleNameLabel
             // 
@@ -107,6 +109,7 @@ namespace Contact_Tracing
             this.middleNameLabel.Size = new System.Drawing.Size(101, 18);
             this.middleNameLabel.TabIndex = 5;
             this.middleNameLabel.Text = "Middle Name";
+            this.middleNameLabel.Click += new System.EventHandler(this.middleNameLabel_Click);
             // 
             // MiddleNameTxtBox
             // 
@@ -117,6 +120,7 @@ namespace Contact_Tracing
             this.MiddleNameTxtBox.Name = "MiddleNameTxtBox";
             this.MiddleNameTxtBox.Size = new System.Drawing.Size(123, 29);
             this.MiddleNameTxtBox.TabIndex = 6;
+            this.MiddleNameTxtBox.TextChanged += new System.EventHandler(this.MiddleNameTxtBox_TextChanged);
             // 
             // Genderlabel
             // 
@@ -141,6 +145,7 @@ namespace Contact_Tracing
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(119, 29);
             this.comboBox1.TabIndex = 8;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // FirstNameLabel
             // 
@@ -152,6 +157,7 @@ namespace Contact_Tracing
             this.FirstNameLabel.Size = new System.Drawing.Size(85, 18);
             this.FirstNameLabel.TabIndex = 9;
             this.FirstNameLabel.Text = "First Name";
+            this.FirstNameLabel.Click += new System.EventHandler(this.FirstNameLabel_Click);
             // 
             // firstNameTxtBox
             // 
@@ -162,6 +168,7 @@ namespace Contact_Tracing
             this.firstNameTxtBox.Name = "firstNameTxtBox";
             this.firstNameTxtBox.Size = new System.Drawing.Size(127, 29);
             this.firstNameTxtBox.TabIndex = 10;
+            this.firstNameTxtBox.TextChanged += new System.EventHandler(this.firstNameTxtBox_TextChanged);
             // 
             // AgeTxtBox
             // 
@@ -172,6 +179,7 @@ namespace Contact_Tracing
             this.AgeTxtBox.Name = "AgeTxtBox";
             this.AgeTxtBox.Size = new System.Drawing.Size(84, 29);
             this.AgeTxtBox.TabIndex = 11;
+            this.AgeTxtBox.TextChanged += new System.EventHandler(this.AgeTxtBox_TextChanged);
             // 
             // AgeLabel
             // 
@@ -183,6 +191,7 @@ namespace Contact_Tracing
             this.AgeLabel.Size = new System.Drawing.Size(37, 18);
             this.AgeLabel.TabIndex = 12;
             this.AgeLabel.Text = "Age";
+            this.AgeLabel.Click += new System.EventHandler(this.AgeLabel_Click);
             // 
             // ContactLabel
             // 
@@ -204,6 +213,7 @@ namespace Contact_Tracing
             this.ContactTxtBox.Name = "ContactTxtBox";
             this.ContactTxtBox.Size = new System.Drawing.Size(141, 29);
             this.ContactTxtBox.TabIndex = 14;
+            this.ContactTxtBox.TextChanged += new System.EventHandler(this.ContactTxtBox_TextChanged);
             // 
             // EmailLabel
             // 
@@ -225,6 +235,7 @@ namespace Contact_Tracing
             this.EmailTxtBox.Name = "EmailTxtBox";
             this.EmailTxtBox.Size = new System.Drawing.Size(173, 29);
             this.EmailTxtBox.TabIndex = 16;
+            this.EmailTxtBox.TextChanged += new System.EventHandler(this.EmailTxtBox_TextChanged);
             // 
             // AddressLabel
             // 
@@ -246,6 +257,7 @@ namespace Contact_Tracing
             this.AddressTxtBox.Name = "AddressTxtBox";
             this.AddressTxtBox.Size = new System.Drawing.Size(214, 29);
             this.AddressTxtBox.TabIndex = 18;
+            this.AddressTxtBox.TextChanged += new System.EventHandler(this.AddressTxtBox_TextChanged);
             // 
             // BarangayLAbel
             // 
@@ -267,6 +279,7 @@ namespace Contact_Tracing
             this.BrgyTxtBox.Name = "BrgyTxtBox";
             this.BrgyTxtBox.Size = new System.Drawing.Size(150, 29);
             this.BrgyTxtBox.TabIndex = 20;
+            this.BrgyTxtBox.TextChanged += new System.EventHandler(this.BrgyTxtBox_TextChanged);
             // 
             // CityLabel
             // 
@@ -288,6 +301,7 @@ namespace Contact_Tracing
             this.CityTxtBox.Name = "CityTxtBox";
             this.CityTxtBox.Size = new System.Drawing.Size(150, 29);
             this.CityTxtBox.TabIndex = 22;
+            this.CityTxtBox.TextChanged += new System.EventHandler(this.CityTxtBox_TextChanged);
             // 
             // SubmitButton
             // 
@@ -300,6 +314,7 @@ namespace Contact_Tracing
             this.SubmitButton.TabIndex = 23;
             this.SubmitButton.Text = "Submit";
             this.SubmitButton.UseVisualStyleBackColor = false;
+            this.SubmitButton.Click += new System.EventHandler(this.SubmitButton_Click);
             // 
             // Form1
             // 
