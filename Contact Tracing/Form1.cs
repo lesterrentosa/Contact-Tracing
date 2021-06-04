@@ -71,7 +71,8 @@ namespace Contact_Tracing
         private void SubmitButton_Click(object sender, EventArgs e)
         {
             StreamWriter outputFile;
-            outputFile = File.CreateText("Output.txt");
+            outputFile = File.AppendText("Output.txt");
+            outputFile.WriteLine("");
             outputFile.Write("Last Name: ");
             outputFile.WriteLine(lastNameTxtBox.Text);
             outputFile.Write("First Name: ");
@@ -93,6 +94,17 @@ namespace Contact_Tracing
             outputFile.Write("City: ");
             outputFile.WriteLine(CityTxtBox.Text);
             outputFile.Close();
+            lastNameTxtBox.Clear();
+            firstNameTxtBox.Clear();
+            MiddleNameTxtBox.Clear();
+            AgeTxtBox.Clear();
+            comboBox1.ResetText();
+            ContactTxtBox.Clear();
+            EmailTxtBox.Clear();
+            AddressTxtBox.Clear();
+            BrgyTxtBox.Clear();
+            CityTxtBox.Clear();
+            MessageBox.Show("Thank you!", "Done");
         }
 
         private void LastNameLabel_Click(object sender, EventArgs e)
